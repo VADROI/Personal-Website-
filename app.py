@@ -15,7 +15,7 @@ with left_logo:
 
 with center_logo:
     st.image(
-        r"personal\NYU_Long_RGB_Black.png",
+        r"NYU_Long_RGB_Black.png",
         width=250
     )
     st.markdown(
