@@ -238,7 +238,7 @@ with col1:
     st.download_button(
         "Download Resume",
         data=resume,
-        file_name="Arya_Roi_Resume.pdf",
+        file_name="Arya_Roi_Resume1.pdf",
         mime="application/pdf",
         use_container_width=True
     )
