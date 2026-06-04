@@ -212,7 +212,7 @@ AI Research | Machine Learning | Data Science | Analytics | Visualization
 # --------------------------------------------------
 
 with open(
-    r"Arya_Roi_Resume 25032026.pdf",
+    r"Arya_Roi_Resume1.pdf",
     "rb"
 ) as file:
     resume = file.read()
