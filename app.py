@@ -9,17 +9,17 @@ left_logo, spacer1, center_logo, spacer2, right_space = st.columns([1, 1, 1, 1, 
 with left_logo:
     st.image(r"siemens-seeklogo.png", width=200)
     st.markdown(
-        "<p style='text-align:left; font-size:20px;'>Data Scientist</p>",
+        "<p style='text-align:left; font-size:20px;'>Ex Data Scientist - 3 Years</p>",
         unsafe_allow_html=True
     )
 
 with center_logo:
     st.image(
-        r"E:\NYU Main\Jobs\NYU_Long_RGB_Black.png",
+        r"personal\NYU_Long_RGB_Black.png",
         width=250
     )
     st.markdown(
-        "<p style='text-align:left; font-size:20px; font-color: #898989;'>Masters Student</p>",
+        "<p style='text-align:left; font-size:20px; font-color: #898989;'>Master's Student - May 27'</p>",
         unsafe_allow_html=True
     )
 
@@ -29,17 +29,9 @@ with right_space:
         width=180
     )
     st.markdown(
-        "<p style='text-align:center; font-size:20px; font-color: #898989;'>Summer Intern</p>",
+        "<p style='text-align:left; font-size:20px; font-color: #898989;'>Summer Intern - 26'</p>",
         unsafe_allow_html=True
     )
-#add image in center of page
-# center_image, = st.columns([1])
-# with center_image:
-#     st.image(r"NYU_Long_RGB_Black.png", width=200)
-# --------------------------------------------------
-# PAGE CONFIG
-# --------------------------------------------------
-
 
 # --------------------------------------------------
 # STYLING
@@ -50,7 +42,8 @@ st.markdown("""
 <style>
 
 div[data-testid="stImage"] {
-    margin-bottom: -20px;
+    margin-bottom: -10px;
+    margin-top: 10px;
 }
 
 p {
@@ -60,8 +53,8 @@ p {
 
 /* Remove Streamlit padding */
 .block-container {
-    padding-top: 0.1rem;
-    padding-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 header[data-testid="stHeader"] {
     display: none;
@@ -110,7 +103,7 @@ html, body, [class*="css"] {
     text-align: center;
     font-size: 1.25rem;
     color: #666666;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
 }
 
 /* Cards */
@@ -167,7 +160,7 @@ html, body, [class*="css"] {
 .footer {
     text-align:center;
     color:#888;
-    margin-top:40px;
+    margin-top:0px;
 }
 
 </style>
@@ -190,7 +183,7 @@ st.markdown(
     <div class="name">ARYA ROI</div>
     <div class="name-line"></div>
     <div class="subtitle">
-        Data Scientist • New York University
+        Your Story • Stronger • With Data
     </div>
     """,
     unsafe_allow_html=True
@@ -206,9 +199,10 @@ st.markdown("""
             margin:auto;
             color:#444;
             font-size:1.1rem;
-            padding-bottom:35px;'>
-
-Data • Drives • Our • Everyday
+            padding-bottom:0px;'>
+#Electronics & Computer Science Engineer (Undergrad) | Urban Data Science (Masters)
+<br>
+AI Research | Machine Learning | Data Science | Analytics | Visualization
 
 </div>
 """, unsafe_allow_html=True)
@@ -218,7 +212,7 @@ Data • Drives • Our • Everyday
 # --------------------------------------------------
 
 with open(
-    r"E:\NYU Main\Jobs\Resume\Arya_Roi_Resume 25032026.pdf",
+    r"Arya_Roi_Resume 25032026.pdf",
     "rb"
 ) as file:
     resume = file.read()
@@ -263,7 +257,7 @@ with col2:
 
         st.link_button(
         "Visit LinkedIn",
-        "https://linkedin.com/in/YOUR_PROFILE",
+        "https://linkedin.com/in/arya-roi",
         use_container_width=True
     )
 # --------------------------------------------------
@@ -286,7 +280,7 @@ with col3:
 
     st.link_button(
         "Visit GitHub",
-        "https://github.com/YOUR_USERNAME",
+        "https://github.com/VADROI",
         use_container_width=True
     )
 
@@ -303,7 +297,7 @@ with col4:
 
     st.link_button(
         "View Tableau Portfolio",
-        "https://public.tableau.com/app/profile/YOUR_PROFILE",
+        "https://public.tableau.com/app/profile/arya.roi/vizzes",
         use_container_width=True
     )
 
