@@ -7,7 +7,7 @@ st.set_page_config(
 left_logo, spacer1, center_logo, spacer2, right_space = st.columns([1, 1, 1, 1, 1])
 
 with left_logo:
-    st.image(r"siemens-seeklogo.png", width=200)
+    st.image(r"siemens-seeklogo.png", use_container_width=True)
     st.markdown(
         "<p style='text-align:left; font-size:20px;'>Ex Data Scientist - 3 Years</p>",
         unsafe_allow_html=True
@@ -16,7 +16,7 @@ with left_logo:
 with center_logo:
     st.image(
         r"NYU_Long_RGB_Black.png",
-        width=250
+        use_container_width=True
     )
     st.markdown(
         "<p style='text-align:left; font-size:20px; font-color: #898989;'>Master's Student - May 27'</p>",
@@ -26,7 +26,7 @@ with center_logo:
 with right_space:
     st.image(
         r"Untitled - June 04, 2026 at 16.53.59.png",
-        width=180
+        use_container_width=True
     )
     st.markdown(
         "<p style='text-align:left; font-size:20px; font-color: #898989;'>Summer Intern - 26'</p>",
