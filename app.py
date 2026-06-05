@@ -85,24 +85,25 @@ html, body, [class*="css"] {
     font-weight: 700;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 0;
     color: #1a1a1a;
+    margin: 0;
 }
 
 /* Purple line */
+
 .name-line {
     width: 120px;
     height: 4px;
     background: #57068c;
-    margin: 10px auto 20px auto;
+    margin: 0px auto 5px auto;
     border-radius: 10px;
 }
 
-/* Subtitle */
 .subtitle {
     text-align: center;
     font-size: 1.25rem;
     color: #666666;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -170,24 +171,33 @@ html, body, [class*="css"] {
 # HEADER
 # --------------------------------------------------
 
-col1, col2, col3 = st.columns([2,1,2])
+left_img, title_col, right_img = st.columns([1, 4, 1])
 
-# with col2:
-#     st.image(
-#         r"E:\NYU Main\Jobs\NYU_Long_RGB_Black.png",
-#         width=200
-#     )
+with left_img:
+    st.image(
+        r"IMG_2877.jpg",   # your new left image
+        use_container_width=True
+    )
 
-st.markdown(
-    """
-    <div class="name">ARYA ROI</div>
-    <div class="name-line"></div>
-    <div class="subtitle">
-        Your Story • Stronger • With Data
+with title_col:
+    st.markdown("""
+    <div class="name">
+        ARYA ROI
     </div>
-    """,
-    unsafe_allow_html=True
-)
+    """, unsafe_allow_html=True)
+
+with right_img:
+    st.image(
+        r"NYC.png"
+        use_container_width=True
+    )
+
+st.markdown("""
+<div class="name-line"></div>
+<div class="subtitle">
+    Everything's • Stronger • With Data
+</div>
+""", unsafe_allow_html=True)
 
 # --------------------------------------------------
 # ABOUT
@@ -200,13 +210,10 @@ st.markdown("""
             color:#444;
             font-size:1.1rem;
             padding-bottom:0px;'>
-#Electronics & Computer Science Engineer (Undergrad) | Urban Data Science (Masters)
-<br>
-AI Research | Machine Learning | Data Science | Analytics | Visualization
 
+Expert - AI | Data Visualization
 </div>
 """, unsafe_allow_html=True)
-
 # --------------------------------------------------
 # RESUME FILE
 # --------------------------------------------------
