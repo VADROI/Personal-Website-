@@ -187,8 +187,7 @@ with title_col:
     """, unsafe_allow_html=True)
 
 with right_img:
-    st.image(
-        r"NYC.png"
+    st.image(r"NYC.png",
         use_container_width=True
     )
 
